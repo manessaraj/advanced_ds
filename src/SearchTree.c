@@ -1,4 +1,4 @@
-# include "search_tree.h"
+#include "search_tree.h"
 
 /*
 * Search Trees can follow two models (1) Model A (Leaf Trees): Compare key with left key, if smaller, 
@@ -9,3 +9,24 @@
 * If Key is the Object, then Model B is preffered as normally in the textbooks, since key is the object,
 * they are called node trees. All DB implementation follows Model A. 
 */
+
+
+bool is_leaf(tree_leaf_t *node) {
+    return node != NULL && node-> right == NULL && node -> left != NULL;
+}
+
+
+bool is_empty(tree_node_t *node) {
+    return node-> left == NULL;
+}
+
+tree_leaf_t *get_node() {
+    return (tree_leaf_t) malloc(0, sizeof(tree_leaf_t));
+}
+
+tree_leaf_t *create_tree(void) {
+    tree_leaf_t *temp_node = NULL;
+    temp_node = get_node();
+    temp_node->left = NULL;
+    return (temp_node);
+}

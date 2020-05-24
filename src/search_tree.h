@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdbool.h>
 
 /*
 * Type definition of leaf search tree.
