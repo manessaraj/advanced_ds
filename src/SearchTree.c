@@ -1,3 +1,5 @@
+# include "search_tree.h"
+
 /*
 * Search Trees can follow two models (1) Model A (Leaf Trees): Compare key with left key, if smaller, 
 * then choose left, else choose right. (2) Model B (Node Trees): Compare key with current node for 
